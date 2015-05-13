@@ -9,3 +9,6 @@ RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -yq \
     libpq-dev python-psycopg2 build-essential \
     --no-install-recommends
+
+# Install Docker from Docker Inc. repositories.
+RUN curl -sSL https://get.docker.com/ubuntu/ | sh
